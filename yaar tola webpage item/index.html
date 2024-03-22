@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaar Mohammad Tola Village</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("thumbnail.jpeg");
+            background-size: cover;
+            background-position: center;
+            color:#FFFF00;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .main-content {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .image-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        .image-slider img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .map-container {
+            margin-top: 50px;
+        }
+        .visitor-counter {
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YAAR MOHAMMAD TOLA</h1>
+	<b>OFFICIAL WEBSITE OF VILLAGE YAAR MOHAMMAD TOLA</b>
+    </header>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="news.html">News</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="shops.html">Shops</a>
+	    <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="container main-content">
+        <b>Welcome to the Official Website of Yaar Mohammad Tola!
+
+Nestled amidst the serene landscapes of rural charm, Yaar Mohammad Tola extends its warm embrace to visitors from far and wide. As you step into our quaint village, founded in the year 1902, you embark on a journey through time, where tradition meets modernity in perfect harmony.
+
+Explore our vibrant marketplace, where a plethora of shops awaits your discovery. From traditional artisans crafting exquisite handicrafts to modern boutiques offering the latest fashion trends, there's something for every shopper's delight. Indulge in the rich tapestry of our local culture as you browse through the diverse array of offerings, each reflecting the unique craftsmanship and heritage of our village.
+
+For those seeking moments of tranquility and spiritual reflection, Yaar Mohammad Tola boasts an array of praying places. Whether you seek solace in the quiet serenity of our mosques or the contemplative ambiance of our temples, our sacred spaces invite you to connect with your inner self and embrace the divine presence that permeates our village.
+
+No visit to Yaar Mohammad Tola would be complete without experiencing the culinary delights of our famed family Hajimunna. Renowned far and wide for its delectable flavors and warm hospitality, our Hajimunna invites you to savor the authentic taste of our traditional cuisine, passed down through generations with love and care. From aromatic biryanis to mouthwatering kebabs, each dish tells a story of culinary craftsmanship that has stood the test of time.
+
+So come, immerse yourself in the enchanting allure of Yaar Mohammad Tola. Whether you're here to shop, pray, or simply unwind amidst the tranquil beauty of rural life, our village welcomes you with open arms and promises an unforgettable experience that will linger in your heart long after you depart.
+ </b>       
+<div class="visitor-counter">
+            Total Visitors: <span id="total-visitors">0</span>
+        </div>
+    </div>
+    <div class="container map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d461921.2854960661!2d87.39160639195558!3d25.2450058638401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fa8dc0673cd4f5%3A0x9ca1f457c42c4618!2sYaar%20md%20tola%20Starting!5e0!3m2!1sen!2sin!4v1711032764488!5m2!1sen!2sin" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        <p>&copy; 2024 Yaar Mohammad Tola Village</p>
+    </footer>
+    <script>
+        // Visitor Counter
+        var totalVisitors = 0;
+        function incrementVisitorCounter() {
+            totalVisitors++;
+            document.getElementById('total-visitors').textContent = totalVisitors;
+        }
+        // Increment the counter on page load (for demonstration)
+        window.onload = function() {
+            incrementVisitorCounter();
+        };
+    </script>
+</body>
+</html>
+
